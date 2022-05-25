@@ -1,0 +1,4 @@
+/node_modules
+npm-degub.log
+.DS_Store
+/*.env
