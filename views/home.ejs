@@ -1,0 +1,21 @@
+
+<%- include("partials/header"); -%>
+
+    <h1>Introduction</h1>
+    <p> <%= startingContent %> 
+      <img class="mb-4" src="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded/18201373/18201373-1632601794297-de1eadc3532f.jpg" alt="ye h fotu" width="200" height="200" align-items="center">
+    </p>
+
+  <%  posts.forEach(function(post){ %>
+
+    <h1><%=post.title%></h1>
+    <p>
+    <%=post.content.substring(0, 100) + " ..."%>
+    <a href="/posts/<%=post._id%>">Read More</a>
+    </p>
+
+
+    <% }) %>
+
+
+<%- include("partials/footer"); -%>
